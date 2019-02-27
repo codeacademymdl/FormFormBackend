@@ -1,4 +1,4 @@
-const { showContent } = require('../../db/index');
+const { addContentToDb } = require('../../db/index');
 
 module.exports = [{
   path: '/insert',
@@ -12,7 +12,7 @@ module.exports = [{
   handler: async (request, h) => {
     try {
       console.log(request.payload);
-      showContent(request.payload);
+      addContentToDb(request.payload);
 
       return h.response({ message: 'data passed' }).code(201);
     } catch (error) {
