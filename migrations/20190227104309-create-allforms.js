@@ -17,6 +17,9 @@ module.exports = {
     formContent: {
       type: Sequelize.JSONB,
     },
+    formFields: {
+      type: Sequelize.JSONB,
+    },
     createdAt: {
       allowNull: false,
       type: Sequelize.DATE,

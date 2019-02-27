@@ -4,15 +4,18 @@ module.exports = (sequelize, DataTypes) => {
     formId: DataTypes.INTEGER,
     formName: DataTypes.STRING,
     formContent: DataTypes.JSONB,
+    formFields: DataTypes.JSONB,
 
   }, {});
 
 
-  allforms.generate = (formId, formName, formContent) => allforms.findOrCreate({
+  allforms.generate = (formId, formName, formContent, formFields) => allforms.findOrCreate({
     where: {
       formId,
       formName,
       formContent,
+      formFields,
+
     },
   }).then(() => (allforms)).catch((err) => {
     console.log(err);
@@ -21,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
 
   allforms.getAllContent = async () => {
     const data = await allforms.findAll({
-      attributes: ['formId', 'formName'],
+      attributes: ['formId', 'formName', 'createdAt', 'formFields'],
     });
     return data;
   };
