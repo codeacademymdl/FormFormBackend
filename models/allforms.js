@@ -17,5 +17,15 @@ module.exports = (sequelize, DataTypes) => {
   }).then(() => (allforms)).catch((err) => {
     console.log(err);
   });
+
+
+  allforms.getAllContent = async () => {
+    const data = await allforms.findAll({
+      attributes: ['formId', 'formName'],
+    });
+    return data;
+  };
+
+
   return allforms;
 };
