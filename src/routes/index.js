@@ -1,5 +1,5 @@
-const ping = require('./ping')
+const ping = require('./ping');
+const getFormDetails = require('./getFormDetails');
 
 
-module.exports = [...ping,]
-
+module.exports = [...ping, ...getFormDetails];
