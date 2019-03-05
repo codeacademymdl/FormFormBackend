@@ -3,6 +3,12 @@ const Model = require('../../models');
 module.exports = [{
   path: '/insertFormField',
   method: 'POST',
+  config: {
+    cors: {
+      origin: ['*'],
+      additionalHeaders: ['cache-control', 'x-requested-with'],
+    },
+  },
   handler: async (request, h) => {
     try {
       console.log(request.payload);
