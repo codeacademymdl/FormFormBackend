@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1551781111640" clover="3.2.0">
-  <project timestamp="1551781111641" name="All files">
+<coverage generated="1551845571469" clover="3.2.0">
+  <project timestamp="1551845571469" name="All files">
     <metrics statements="74" coveredstatements="54" conditionals="11" coveredconditionals="7" methods="16" coveredmethods="10" elements="101" coveredelements="71" complexity="0" loc="74" ncloc="74" packages="3" files="9" classes="9"/>
     <package name="FormFormBackend">
       <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
@@ -23,11 +23,11 @@
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="12" count="3" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="25" count="3" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
         <line num="33" count="3" type="stmt"/>
       </file>
       <file name="formfields.js" path="/Users/Vibhore_Gupta/Code Academy/FormFormBackend/models/formfields.js">
