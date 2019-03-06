@@ -1,4 +1,3 @@
-
 module.exports = (sequelize, DataTypes) => {
   const formfields = sequelize.define('formfields', {
     formId: DataTypes.INTEGER,
